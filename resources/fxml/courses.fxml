@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<!--<?scenebuilder-stylesheet tab.css?>-->
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CoursesController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" text="Clear all" onAction="#handleClearAll"/>
+            <Button defaultButton="true" layoutX="522.0" layoutY="341.0" mnemonicParsing="false" onAction="#goToInstructors" text="Next" />
+            <TextField fx:id="newCourseName" layoutX="194.0" layoutY="12.0" prefHeight="25.0" prefWidth="324.0" promptText="Enter course name" />
+            <TableView fx:id="courseTable" layoutX="17.0" layoutY="49.0" prefHeight="278.0" prefWidth="543.0">
+               <columns>
+                  <TableColumn fx:id="courseCodeCol" prefWidth="66.0" text="Code" />
+                  <TableColumn fx:id="courseNameCol" prefWidth="476.0" text="Name" />
+               </columns>
+            </TableView>
+            <Button layoutX="527.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleNewCourse" text="Add" />
+            <Label layoutX="14.0" layoutY="14.0" text="Courses">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="81.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleDeleteCourse" text="Delete Course" />
+            <TextField fx:id="newCourseCode" layoutX="69.0" layoutY="12.0" prefHeight="25.0" prefWidth="116.0" promptText="Enter course code" />
+         </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</StackPane>

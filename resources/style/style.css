@@ -1,0 +1,7 @@
+#about{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #82B1FF;
+    -fx-padding: 20px;
+    /* top-left, top-right, bottom-right, and bottom-left corners, in that order. */
+}

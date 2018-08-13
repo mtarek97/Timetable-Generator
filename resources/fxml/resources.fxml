@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<!--<?scenebuilder-stylesheet tab.css?>-->
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ResourcesController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Button defaultButton="true" layoutX="522.0" layoutY="341.0" mnemonicParsing="false" onAction="#goToCourses" text="Next" />
+            <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleClearAll" text="Clear all" />
+            <Label layoutX="14.0" layoutY="13.0" text="Working days" />
+            <HBox layoutX="14.0" layoutY="39.0" prefHeight="33.0" prefWidth="549.0">
+               <children>
+                  <TilePane hgap="5.0" prefHeight="33.0" prefWidth="545.0">
+                     <children>
+                        <CheckBox fx:id="saturdayCheckBox" mnemonicParsing="false" text="Saturday">
+                           <TilePane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </TilePane.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="sundayCheckBox" mnemonicParsing="false" text="Sunday" />
+                        <CheckBox fx:id="mondayCheckBox" mnemonicParsing="false" text="Monday" />
+                        <CheckBox fx:id="tuesdayCheckBox" mnemonicParsing="false" text="Tuesday" />
+                        <CheckBox fx:id="wednesdayCheckBox" mnemonicParsing="false" text="Wednesday" />
+                        <CheckBox fx:id="thursdayCheckBox" mnemonicParsing="false" text="Thursday" />
+                     </children>
+                  </TilePane>
+               </children>
+            </HBox>
+            <TextField fx:id="periodsCount" layoutX="171.0" layoutY="72.0" promptText="5" />
+            <Label layoutX="15.0" layoutY="76.0" text="Number of periods per day" />
+            <Separator layoutX="76.0" layoutY="110.0" prefHeight="4.0" prefWidth="426.0" />
+            <Label layoutX="14.0" layoutY="129.0" text="Rooms">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button layoutX="208.0" layoutY="127.0" mnemonicParsing="false" onAction="#handleNewRoom" text="Add" />
+            <TableView fx:id="roomTable" layoutX="16.0" layoutY="164.0" prefHeight="160.0" prefWidth="230.0">
+              <columns>
+                <TableColumn fx:id="roomIDCol" prefWidth="66.0" text="ID" />
+                <TableColumn fx:id="roomNameCol" prefWidth="163.0" text="Name" />
+              </columns>
+            </TableView>
+            <Button layoutX="159.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleDeleteRoom" text="Delete Room" />
+            <TextField fx:id="newRoomName" layoutX="64.0" layoutY="127.0" prefHeight="25.0" prefWidth="135.0" promptText="Enter room name" />
+            <Label layoutX="263.0" layoutY="129.0" text="Student Groups">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newGroupName" layoutX="366.0" layoutY="127.0" promptText="Enter group name" />
+            <Button layoutX="523.0" layoutY="127.0" mnemonicParsing="false" onAction="#handleNewGroup" text="Add" />
+            <TableView fx:id="groupTable" layoutX="263.0" layoutY="164.0" prefHeight="160.0" prefWidth="296.0">
+               <columns>
+                  <TableColumn fx:id="groupIDCol" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="groupNameCol" prefWidth="220.0" text="Name" />
+               </columns>
+            </TableView>
+            <Button layoutX="263.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleDeleteGroup" text="Delete Group" />
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</StackPane>

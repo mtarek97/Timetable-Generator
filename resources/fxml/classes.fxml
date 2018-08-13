@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<!--<?scenebuilder-stylesheet tab.css?>-->
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClassesController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" text="Clear all" onAction="#handleClearAll"/>
+                <Button defaultButton="true" layoutX="463.0" layoutY="341.0" mnemonicParsing="false" onAction="#generateTable" text="Generate Table!" />
+                <TableView fx:id="classTable" layoutX="17.0" layoutY="80.0" prefHeight="247.0" prefWidth="543.0">
+               <columns>
+                  <TableColumn fx:id="classIDCol" prefWidth="36.0" text="ID" />
+                  <TableColumn fx:id="classGroupCol" prefWidth="107.0" text="Group" />
+                  <TableColumn fx:id="classTypeCol" minWidth="7.0" prefWidth="97.0" text="Type" />
+                  <TableColumn fx:id="classCourseCol" prefWidth="114.0" text="Course" />
+                  <TableColumn fx:id="classInstructorCol" prefWidth="123.0" text="Instructor" />
+                  <TableColumn fx:id="classRoomCol" prefWidth="65.0" text="Room" />
+               </columns>
+                </TableView>
+                <Button layoutX="482.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleNewClass" prefHeight="25.0" prefWidth="81.0" text="Add" />
+                <Label layoutX="14.0" layoutY="14.0" text="Group">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button layoutX="81.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleDeleteClass" text="Delete Class" />
+            <ChoiceBox fx:id="newClassGroup" layoutX="59.0" layoutY="12.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="newClassType" layoutX="266.0" layoutY="12.0" prefHeight="25.0" prefWidth="92.0" />
+            <Label layoutX="228.0" layoutY="15.0" text="Type">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="372.0" layoutY="15.0" text="Course">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="newClassCourse" layoutX="422.0" layoutY="13.0" prefHeight="25.0" prefWidth="138.0" />
+            <Label layoutX="245.0" layoutY="50.0" text="Room">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="newClassRoom" layoutX="291.0" layoutY="47.0" prefHeight="25.0" prefWidth="138.0" />
+            <ChoiceBox fx:id="newClassInstructor" layoutX="80.0" layoutY="47.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="49.0" text="Instructor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</StackPane>

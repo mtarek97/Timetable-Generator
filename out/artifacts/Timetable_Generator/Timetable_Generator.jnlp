@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Timetable_Generator.jnlp">
+  <information>
+    <title>Time-table Generator</title>
+    <vendor>Unknown</vendor>
+    <description>Timetable-Generator</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Timetable_Generator.jar" size="38132" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="view.App"  name="Timetable-Generator" />
+  <update check="background"/>
+</jnlp>

@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Timetable-Generator">
+    <output-path>$PROJECT_DIR$/out/artifacts/Timetable_Generator</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="view.App" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Time-table Generator" />
+        <option name="vendor" value="" />
+        <option name="version" value="v1.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Timetable_Generator.jar">
+        <element id="module-output" name="Timetable-Generator" />
+      </element>
+    </root>
+  </artifact>
+</component>

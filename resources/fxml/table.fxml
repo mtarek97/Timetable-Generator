@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<!--<?scenebuilder-stylesheet tab.css?>-->
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <TableView fx:id="generatedTable" layoutX="17.0" layoutY="14.0" prefHeight="350.0" prefWidth="543.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0">
+                    <columns>
+                        <TableColumn fx:id="tableDayCol" prefWidth="66.0" text="Day" />
+                  <TableColumn fx:id="tableRoomCol" prefWidth="102.0" text="Room" />
+                  <TableColumn fx:id="tablePeriodCol" prefWidth="73.0" text="Period" />
+                  <TableColumn fx:id="tableClassCol" prefWidth="301.0" text="Class" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</StackPane>
